@@ -4,7 +4,7 @@ title: 부경대학교 디지털 스마트 아카데미
 permalink: /
 ---
 
-![git](/img/main.avif)
+![git](/img/main.avif )
 
 
 
