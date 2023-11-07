@@ -1,38 +1,67 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
 
-<div id="post" class="container">
+        {%- include head.html -%}
 
-	<div class="postthumb"><img src="/thumbnails/{{ page.thumbnail }}" /></div>
+        {% if page.previous %}
+            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+        {% else %}
+            <link rel="prev" href="{{site.baseurl}}/" />
+        {% endif %}
 
-	<h1>{{ page.title }}</h1>
+        {% if page.next %}
+            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+        {% endif %}
+    </head>
+    <body>
+        <div class="book">
 
-	<div class="meta clearfix">
-		<strong>Author:</strong> {{ page.author }}
+            {%- include toc-date.html -%}
 
-		{% if page.license %}
-			<br /><strong>License:</strong> {{ page.license }}
-		{% endif %}
+            <div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        {% if page.title %}
+                            <a href="." >{{ page.title | escape }}</a>
+                        {% else %}
+                            <a href="." >{{ site.title | escape }}</a>
+                        {% endif %}
+                    </h1>
+                </div>
 
-		<br /><br />
-		{% if page.homepage %}
-			<a class="btn" href="{{ page.homepage }}"><i class="icon-home"></i> Homepage</a>
-		{% endif %}
-		{% if page.download %}
-			<a class="btn" href="{{ page.download }}"><i class="icon-download-alt"></i> Download</a>
-		{% endif %}
-		{% if page.demo %}
-			<a class="btn" href="{{ page.demo }}"><i class="icon-road"></i> Demo</a>
-		{% endif %}
-		{% if page.license_link %}
-			<a class="btn" href="{{ page.license_link }}"><i class="icon-file"></i> License</a>
-		{% endif %}
-	</div>
+                <div class="body-inner">
+                    {%- include body.html -%}
 
+                    {% if page.previous %}
+                        <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    {% else %}
+                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    {% endif %}
 
-	<div class="post-content">
-	{{ content }}
-	</div>
+                    {% if page.next %}
+                        <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
 
-</div>
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
+            });
+            </script>
+        </div>
+
+        {%- include footer.html -%}
+
+    </body>
+</html>
