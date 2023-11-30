@@ -110,7 +110,7 @@ if __name__ == '__main__':
     connect()
 ```
 
-# 데이터 1건 가져오기
+# 데이터 1건씩 가져와서 처리
 03_fetchone.py
 ```python
 from mysql.connector import MySQLConnection, Error
@@ -142,7 +142,7 @@ if __name__ == '__main__':
     query_with_fetchone()
 ```
 
-# 전체 데이터 가져오기
+# 한번에 전체 데이터 가져와서 처리
 04_fetchall.py
 ```python
 from mysql.connector import MySQLConnection, Error
@@ -173,7 +173,7 @@ if __name__ == '__main__':
     query_with_fetchall()
 ```
 
-# 데이터 건수 정해서 가져오기
+# 데이터 분할해서 가져오기
 05_fetchmany.py
 ```python
 from mysql.connector import MySQLConnection, Error
