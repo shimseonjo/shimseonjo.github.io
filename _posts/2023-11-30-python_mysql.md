@@ -10,6 +10,11 @@ python 에서 mysql 데이터베이스 연결하는 방법을 배웁니다.
 # 샘플 데이터베이스 다운로드
 [샘플 데이터베이스 다운로드](/data/python_mysql.sql)
 
+# python 라이브러리 설치
+```bash
+pip install mysql-connector-python
+```
+
 # 데이터베이스 연결하기 
 01_connect.py 파일 작성
 ```python
