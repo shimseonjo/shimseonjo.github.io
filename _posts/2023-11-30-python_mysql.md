@@ -110,8 +110,8 @@ if __name__ == '__main__':
     connect()
 ```
 
+# 데이터 1건 가져오기
 03_fetchone.py
-# fetchone()
 ```python
 from mysql.connector import MySQLConnection, Error
 from python_mysql_dbconfig import read_db_config
@@ -141,8 +141,9 @@ def query_with_fetchone():
 if __name__ == '__main__':
     query_with_fetchone()
 ```
+
+# 전체 데이터 가져오기
 04_fetchall.py
-# fetchall()
 ```python
 from mysql.connector import MySQLConnection, Error
 from python_mysql_dbconfig import read_db_config
@@ -172,8 +173,8 @@ if __name__ == '__main__':
     query_with_fetchall()
 ```
 
+# 데이터 건수 정해서 가져오기
 05_fetchmany.py
-# fetchmany()
 ```python
 from mysql.connector import MySQLConnection, Error
 from python_mysql_dbconfig import read_db_config
@@ -245,6 +246,7 @@ if __name__ == '__main__':
     main()
 ```
 
+# 데이터 입력
 06_insertmany.py
 ```python
 from mysql.connector import MySQLConnection, Error
@@ -279,6 +281,7 @@ if __name__ == '__main__':
     main()
 ```
 
+# 데이터 수정
 07_update.py
 ```python
 from mysql.connector import MySQLConnection, Error
@@ -317,6 +320,8 @@ def update_book(book_id, title):
 if __name__ == '__main__':
     update_book(37, 'The Giant on the Hill *** TEST ***')
 ```
+
+# 데이터 삭제
 08_delete.py
 ```python
 from mysql.connector import MySQLConnection, Error
