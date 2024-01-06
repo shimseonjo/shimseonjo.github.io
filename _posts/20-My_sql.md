@@ -1,7 +1,6 @@
 ---
 title: MySQL
 author: shimseonjo
-date: 2023-11-11
 category: Doc
 layout: post
 permalink: /mysql

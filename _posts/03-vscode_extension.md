@@ -1,7 +1,6 @@
 ---
 title: VScode Extensions
 author: shimseonjo
-date: 2024-01-06
 category: Doc
 layout: post
 permalink: /VScode_Extensions

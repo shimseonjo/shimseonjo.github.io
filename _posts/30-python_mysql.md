@@ -1,7 +1,6 @@
 ---
 title: python mysql 연동하기
 author: shimseonjo
-date: 2023-11-30
 category: Doc
 layout: post
 permalink: /python_mysql

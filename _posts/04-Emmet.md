@@ -1,12 +1,11 @@
 ---
 title: Emmet
 author: shimseonjo
-date: 2024-01-06
 category: Doc
 layout: post
 permalink: /Emmet
 ---
-[Emmet](https://emmet.io/)
+[Emmet](https://emmet.io/)  
 [mdn](https://developer.mozilla.org/ko/)
 
 #### html 기본 생성

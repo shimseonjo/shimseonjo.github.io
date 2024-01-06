@@ -1,7 +1,6 @@
 ---
 title: mac 셋팅
 author: shimseonjo
-date: 2024-01-06
 category: Doc
 layout: post
 permalink: /mac_setting
