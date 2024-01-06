@@ -1,7 +1,6 @@
 ---
 title: MarkDown
 author: shimseonjo
-date: 2023-11-09
 category: Doc
 layout: post
 permalink: /MarkDown
