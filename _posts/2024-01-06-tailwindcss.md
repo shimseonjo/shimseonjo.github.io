@@ -1,3 +1,12 @@
+---
+title: Tailwind CSS
+author: shimseonjo
+date: 2024-01-06
+category: Doc
+layout: post
+permalink: /TailwindCSS
+---
+[Tailwind CSS](https://tailwindcss.com/)
 ## CDN 사용
 ```html
 <!doctype html>
