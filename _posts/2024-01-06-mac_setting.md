@@ -4,6 +4,7 @@ author: shimseonjo
 date: 2024-01-06
 category: Doc
 layout: post
+permalink: /mac_setting
 ---
 ## finder 에서 숨긴 파일 확인하기
 cmd + shift + . (토글방식으로 동작)

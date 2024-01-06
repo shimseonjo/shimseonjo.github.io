@@ -4,6 +4,7 @@ author: shimseonjo
 date: 2023-11-30
 category: Doc
 layout: post
+permalink: /python_mysql
 ---
 python 에서 mysql 데이터베이스 연결하는 방법을 배웁니다.
 
