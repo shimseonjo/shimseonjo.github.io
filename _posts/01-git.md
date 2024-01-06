@@ -1,6 +1,7 @@
 ---
 title: Git
 author: shimseonjo
+date: 2023-11-07
 category: Doc
 layout: post
 permalink: /Git
