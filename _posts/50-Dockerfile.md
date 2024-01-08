@@ -1,7 +1,7 @@
 ---
-title: TypeScript
+title: HTML
 author: shimseonjo
 category: Doc
 layout: post
-permalink: /TypeScript
+permalink: /HTML
 ---
